@@ -9,4 +9,12 @@
     <string name="ratingValue">%1$.1f ⭐ (%2$d)</string>
     <string name="openNow">Open Now</string>
     <string name="closed">Closed</string>
+    <string name="directions">Directions</string>
+    <string name="more_info">More Info</string>
+    <string name="shopping">Shopping</string>
+    <string name="hospitals_clinics"><![CDATA[Hospitals & clinics]]></string>
+    <string name="petrol">Petrol</string>
+    <string name="hotels">Hotels</string>
+    <string name="coffee">Coffee</string>
+    <string name="restaurants">Restaurants</string>
 </resources>

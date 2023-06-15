@@ -23,9 +23,9 @@
         android:id="@+id/separator"
         android:layout_width="0dp"
         android:layout_height="1dp"
+        android:layout_marginTop="8dp"
         android:alpha="0.5"
         android:background="@android:color/black"
-        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/placeOpenStatus" />
@@ -89,10 +89,11 @@
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:layout_marginStart="16dp"
+        android:background="@color/md_theme_light_background"
+        android:src="@drawable/baseline_not_listed_location_24"
         app:layout_constraintBottom_toBottomOf="@+id/placeOpenStatus"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/placeName"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintTop_toTopOf="@+id/placeName" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/directionsButton"
@@ -100,7 +101,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Directions"
+        android:text="@string/directions"
+        app:icon="@drawable/baseline_directions_24"
         app:layout_constraintEnd_toStartOf="@+id/moreInfoButton"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -111,7 +113,8 @@
         style="@style/Widget.Material3.Button.OutlinedButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="More Info"
+        android:text="@string/more_info"
+        app:icon="@drawable/baseline_info_24"
         app:layout_constraintBottom_toBottomOf="@+id/directionsButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -122,10 +125,10 @@
         android:id="@+id/separator2"
         android:layout_width="0dp"
         android:layout_height="1dp"
+        android:layout_marginTop="16dp"
         android:alpha="0.5"
         android:background="@android:color/black"
-        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/directionsButton"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/directionsButton" />
 </androidx.constraintlayout.widget.ConstraintLayout>
